@@ -7,6 +7,7 @@ export const ContactList = () => {
   const filter = useSelector(state => state.filter);
 
   const normFilter = filter.toLocaleLowerCase();
+  console.log(contacts)
   const visibleContacts = contacts.filter(contact =>
     contact.name.toLocaleLowerCase().includes(normFilter)
   );
