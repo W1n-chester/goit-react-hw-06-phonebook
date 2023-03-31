@@ -6,7 +6,7 @@ import { ContactForm, Name, Number } from './Form.styled';
 export const Form = () => {
   const [name, setName] = useState('');
   const [number, setNumber] = useState('');
-  const contacts = useSelector(state => state.contacts);
+  const contacts = useSelector(state => state.contacts.contacts);
   const dispatch = useDispatch();
 
   const reset = () => {
